@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -32,7 +32,16 @@
 </head>
 
 <body>
-
+  <!-- <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        <i class="icofont-check"></i> <a href="mailto:contact@example.com">contact@example.com</a>
+        <i class="icofont-check"></i> +1 5589 55488 55
+      </div>
+      
+    </div>
+  </div> -->
+<br>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
@@ -44,38 +53,49 @@
       <h2><i class="bx bxl message-square-check"></i>hello world</h1>
         <h2><i class="bx bxl-dribbble"></i>hello world</h1>
           <h2><i class="bx bxl-dribbble"></i>hello world</h1> -->
-      <nav class="nav-menu d-none d-lg-block">
-        
-      </nav><!-- .nav-menu -->
-
+            <nav class="nav-menu d-none d-lg-block">
+              <ul>
+                <li class="icofont-check">High Quality</li>
+                <li class="icofont-check">Made in USA</a></li>
+                <li class="icofont-check">Always Free Shipping</a></li>
+                
+                  
+                </li>
+               
+      
+              </ul>
+            </nav><!-- .nav-menu -->
       
 
     </div>
   </header><!-- End Header -->
-
+  
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
 
     <div class="container">
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h2>A subscription of serive that delivers <br>Air filter to your door when it's time to change them. </h1>
+          <h2>A subscription of serive that delivers Air filter to your door when it's time to change them. </h1>
           <h2 style="color:orange;">Start with a free trial</h2>
          
-          <div class="form-group">
-           
-            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your mail">
-          </div>
-        
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+               
+                <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validate"></div>
+              </div>
+              </form>
           <div class="d-flex">
-           
-            <br>  
+              
+            <br>
             <a href="#about" class="btn-get-started scrollto">Redeem your free subscription </a>
             
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+         
         </div>
       </div>
     </div>
